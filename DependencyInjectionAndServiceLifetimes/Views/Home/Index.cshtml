@@ -1,0 +1,9 @@
+﻿@using DependencyInjectionAndServiceLifetimes.Interfaces
+@inject IExampleTransientService ExampleTransientService
+@inject IExampleScopedService ExampleScopedService
+@inject IExampleSingletonService ExampleSingletonService
+Examples:
+
+@ExampleTransientService.GetGuid();
+@ExampleScopedService.GetGuid();
+@ExampleSingletonService.GetGuid();
